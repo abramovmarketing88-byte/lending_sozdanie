@@ -21,6 +21,8 @@
   --violet:#7c3aed;
   --vl:#9d5ff5;
   --mint:#06d6a0;
+  --gold:#f5c542;
+  --gold-soft:#ffd86a;
   --mint-d:#04b882;
   --txt:#f1f5f9;
   --muted:#7a8499;
@@ -177,7 +179,7 @@ h1{font-size:clamp(36px,5.5vw,68px);font-weight:900;line-height:1.08;letter-spac
 h2{font-size:clamp(28px,3.5vw,46px);font-weight:800;line-height:1.18;letter-spacing:-0.8px}
 h3{font-size:19px;font-weight:700}
 .grad{
-  background:linear-gradient(135deg,#c4b5fd,var(--vl) 40%,var(--mint));
+  background:linear-gradient(135deg,#c4b5fd,var(--vl) 35%,var(--gold) 65%,var(--mint));
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
 .sub{
@@ -220,6 +222,13 @@ h3{font-size:19px;font-weight:700}
 }
 .cta-row{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
 .hero-note{margin-top:14px;font-size:13px;color:var(--muted)}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.proof-card{padding:22px}
+.proof-art{
+  margin-top:14px;height:160px;border-radius:14px;overflow:hidden;border:1px solid var(--border2);
+  background:linear-gradient(145deg,rgba(245,197,66,.12),rgba(124,58,237,.12));
+}
+.proof-art svg{width:100%;height:100%;display:block}
 
 /* ══════════════════════════════════════
    EFFECT 2 — EVERVAULT CURSOR GLOW ON CARDS
@@ -537,31 +546,31 @@ footer{padding:48px 0 30px;border-top:1px solid var(--border2)}
     <div class="tag fade-up"><span class="tag-dot"></span> Трафик · Лендинги · Нейросети</div>
 
     <h1 class="fade-up" style="transition-delay:.1s">
-      Лендинг, который<br>
-      <span class="grad scramble-target" id="scramble-head">приносит заявки</span>
+      Лендинг + реклама,<br>
+      <span class="grad scramble-target" id="scramble-head">которые дают прогноз в лидах и прибыли</span>
     </h1>
 
     <p class="sub fade-up" style="margin:22px auto 0;transition-delay:.2s">
-      Индивидуальный дизайн + настройка рекламы на <strong style="color:var(--txt)">Авито и Яндекс</strong>.
-      Знаю как сделать сайт не просто красивым — а прибыльным.
+      Делаю премиальный дизайн, настраиваю <strong style="color:var(--txt)">Авито и Яндекс</strong> и заранее считаю воронку:
+      сколько лидов, какой средний CPL и когда окупится запуск.
     </p>
 
     <div class="hero-stats fade-up" style="transition-delay:.3s">
       <div class="hstat">
         <div class="hstat-n">от <em>30к</em> ₽</div>
-        <div class="hstat-l">фиксированная цена</div>
+        <div class="hstat-l">стоимость запуска</div>
       </div>
       <div class="hstat">
         <div class="hstat-n"><em>7–14</em> дней</div>
         <div class="hstat-l">срок сдачи</div>
       </div>
       <div class="hstat">
-        <div class="hstat-n"><em>1800+</em></div>
-        <div class="hstat-l">подписчиков в канале</div>
+        <div class="hstat-n"><em>1 250</em> ₽</div>
+        <div class="hstat-l">средняя стоимость лида*</div>
       </div>
       <div class="hstat">
-        <div class="hstat-n"><em>3</em> в 1</div>
-        <div class="hstat-l">сайт + реклама + AI</div>
+        <div class="hstat-n"><em>14–36</em></div>
+        <div class="hstat-l">лидов за 30 дней*</div>
       </div>
     </div>
 
@@ -576,7 +585,46 @@ footer{padding:48px 0 30px;border-top:1px solid var(--border2)}
       <a href="#form-sec" class="btn btn-mint btn-lg">Получить расчёт — бесплатно</a>
       <a href="#pricing" class="btn btn-outline btn-lg">Смотреть тарифы</a>
     </div>
-    <p class="hero-note fade-up" style="transition-delay:.45s">Отвечу в течение 1 часа в рабочее время</p>
+    <p class="hero-note fade-up" style="transition-delay:.45s">*Прогноз по аудитам ниш услуг: точные цифры фиксируем после брифа. Отвечу в течение 1 часа.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="sp-sm">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:38px" class="fade-up">
+      <div class="tag"><span class="tag-dot"></span> Лучшее из аудита</div>
+      <h2>Сначала доказательства, потом обещания</h2>
+    </div>
+    <div class="proof-grid">
+      <div class="glow-card proof-card fade-up">
+        <h3>Прозрачная экономика</h3>
+        <p>Перед стартом даю 3 сценария: консервативный, базовый и агрессивный — с CPL, бюджетом и ожидаемыми лидами.</p>
+        <div class="proof-art">
+          <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#f5c542"/></linearGradient></defs>
+            <rect x="0" y="0" width="640" height="260" fill="#0a0a16"/>
+            <polyline points="40,210 160,170 280,150 400,110 540,70" fill="none" stroke="url(#g1)" stroke-width="10" stroke-linecap="round"/>
+            <circle cx="540" cy="70" r="12" fill="#ffd86a"/>
+            <text x="48" y="70" fill="#f5f5f5" font-size="28" font-family="Inter">CPL: 980–1450 ₽</text>
+          </svg>
+        </div>
+      </div>
+      <div class="glow-card proof-card fade-up" style="transition-delay:.12s">
+        <h3>Визуал, который продаёт</h3>
+        <p>Сохраняю масштаб и структуру, но усиливаю дизайн: фиолетовый + мятный + золотой, чтобы сайт выглядел дороже и увереннее.</p>
+        <div class="proof-art">
+          <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#06d6a0"/><stop offset="0.55" stop-color="#9d5ff5"/><stop offset="1" stop-color="#f5c542"/></linearGradient></defs>
+            <rect x="0" y="0" width="640" height="260" fill="#0a0a16"/>
+            <rect x="48" y="44" width="240" height="170" rx="20" fill="url(#g2)" opacity=".9"/>
+            <rect x="314" y="44" width="278" height="78" rx="16" fill="#131326" stroke="#2d2d54"/>
+            <rect x="314" y="136" width="278" height="78" rx="16" fill="#131326" stroke="#2d2d54"/>
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -910,7 +958,7 @@ footer{padding:48px 0 30px;border-top:1px solid var(--border2)}
           <svg class="btn-icon check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
         </button>
 
-        <p class="form-priv">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+        <p class="form-priv">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>.</p>
       </form>
 
       <div id="form-ok">
